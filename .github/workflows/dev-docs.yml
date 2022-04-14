@@ -24,15 +24,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12
-      - name: Install Dependencies (Linux)
-        if: matrix.platform == 'ubuntu-latest'
-        run: sudo apt-get install graphviz
-      - name: Install Dependencies (Windows)
-        if: matrix.platform == 'windows-latest'
-        run: choco install graphviz
-      - name: Install Dependencies (macOS)
-        if: matrix.platform == 'macos-latest'
-        run: brew install graphviz
+      - name: Install Graphviz
+        uses: tlylt/install-graphviz@main
       - uses: actions/setup-java@v3
         with:
           java-version: '11'
