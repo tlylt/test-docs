@@ -12,7 +12,7 @@ jobs:
   build:
     strategy:
       matrix:
-        platform: [macOS-latest]
+        platform: [macos-latest]
     runs-on: ${{ matrix.platform }}
     name: Dev docs
     defaults:
@@ -25,13 +25,13 @@ jobs:
         with:
           node-version: 12
       - name: Install Dependencies (Linux)
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.platform == 'ubuntu-latest'
         run: sudo apt-get install graphviz
       - name: Install Dependencies (Windows)
-        if: matrix.os == 'windows-latest'
+        if: matrix.platform == 'windows-latest'
         run: choco install graphviz
       - name: Install Dependencies (macOS)
-        if: matrix.os == 'macOS-latest'
+        if: matrix.platform == 'macos-latest'
         run: brew install graphviz
       - uses: actions/setup-java@v3
         with:
