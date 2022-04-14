@@ -33,6 +33,6 @@ jobs:
           fi
       - name: Deploy on push
         # if: ${{ success() && github.event_name == 'push' }}
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
