@@ -37,9 +37,6 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      
-      - name: Install Graphviz
-        run: sudo apt install graphviz
       - run: npm ci
       - run: npm run build
       - name: Check build status
