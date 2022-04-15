@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 12
       - name: Install Graphviz
-        uses: tlylt/install-graphviz@main
+        uses: tlylt/install-graphviz@v1
       - uses: actions/setup-java@v3
         with:
           java-version: '11'
