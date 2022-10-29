@@ -1,26 +1,26 @@
-Apr 29, 2022 5:22:57 PM reposense.parser.CsvParser validateHeader
-INFO: Parsed header of CSV file, repo-config.csv, and recognized columns: Repository's Location,  Branch,  File formats,  Ignore Glob List,  Ignore Authors List,  Ignore standalone config,  Ignore Commits List
-Apr 29, 2022 5:22:57 PM reposense.parser.CsvParser validateHeader
+Oct 29, 2022 2:09:29 AM reposense.parser.CsvParser validateHeader
+INFO: Parsed header of CSV file, repo-config.csv, and recognized columns: Ignore Standalone Config,  Repository's Location,  Branch,  File formats,  Ignore Glob List,  Ignore Authors List,  Ignore Commits List
+Oct 29, 2022 2:09:29 AM reposense.parser.CsvParser validateHeader
 INFO: Parsed header of CSV file, author-config.csv, and recognized columns: Author's Emails,  Repository's Location,  Author's GitHub ID,  Branch,  Author's Display Name,  Ignore Glob List,  Author's Git Author Name
-Apr 29, 2022 5:22:58 PM reposense.report.RepoCloner spawnCloneProcess
+Oct 29, 2022 2:09:30 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/tlylt/test-docs.git...
-Apr 29, 2022 5:22:58 PM reposense.report.RepoCloner waitForCloneProcess
+Oct 29, 2022 2:09:30 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/tlylt/test-docs.git to complete...
-Apr 29, 2022 5:22:58 PM reposense.report.RepoCloner waitForCloneProcess
+Oct 29, 2022 2:09:31 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/tlylt/test-docs.git completed!
-Apr 29, 2022 5:22:58 PM reposense.report.ReportGenerator analyzeRepos
+Oct 29, 2022 2:09:31 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [1/1] Analyzing https://github.com/tlylt/test-docs.git (main)...
-Apr 29, 2022 5:22:58 PM reposense.report.ReportGenerator updateRepoConfig
+Oct 29, 2022 2:09:32 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/tlylt/test-docs.git (main) does not contain a standalone config file.
-Apr 29, 2022 5:22:58 PM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Oct 29, 2022 2:09:32 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/tlylt/test-docs.git (main)...
-Apr 29, 2022 5:22:59 PM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 29, 2022 2:09:32 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/tlylt/test-docs.git (main)...
-Apr 29, 2022 5:22:59 PM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 29, 2022 2:09:32 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/tlylt/test-docs.git (main)...
-Apr 29, 2022 5:22:59 PM reposense.report.ReportGenerator analyzeRepo
+Oct 29, 2022 2:09:32 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/tlylt/test-docs.git (main) completed!
-Apr 29, 2022 5:22:59 PM reposense.report.ReportGenerator generateReposReport
+Oct 29, 2022 2:09:32 AM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/runner/work/test-docs/test-docs/reposense-report
-Apr 29, 2022 5:22:59 PM reposense.RepoSense main
-INFO: Elapsed processing time: 2.28 second(s)
+Oct 29, 2022 2:09:32 AM reposense.RepoSense main
+INFO: Elapsed processing time: 2.53 second(s)
