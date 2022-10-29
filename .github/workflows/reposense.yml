@@ -1,7 +1,7 @@
 name: Deploy RepoSense report
 
 on:
-# For active deployment on push to main branch
+  # For active deployment on push to main branch
   push:
     branches:
       - main
@@ -9,6 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: tlylt/reposense-action@main
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }} # Required
+      - uses: tlylt/reposense-action@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Required
+          cliArgs: '28/04/2022'
